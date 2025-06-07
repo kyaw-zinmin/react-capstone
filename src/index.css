@@ -1,13 +1,162 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  /* border: 1px solid black; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer components {
+  /* Global styles */
+  .stick-to-text{
+    width: fit-content;
+    height: max-content;
+    line-height: 1;
+  }
+  /* Markazi Text */
+  .display-title {
+    @apply font-markazi text-displayTitle font-medium;
+  }
+  .subtitle {
+    @apply font-markazi text-subbTitle font-medium;
+  }
+  /* Karla   */
+  .lead-text{
+    @apply font-karla text-leadText font-medium;
+  }
+  .section-title{
+    @apply font-karla text-sectionTitle font-extrabold uppercase;
+  }
+  .section-category{
+    @apply font-karla text-sectionCategory font-extrabold;
+  }
+  .card-title{
+    @apply font-karla text-cardTitle font-bold;
+  }
+  .paragraph{
+    @apply font-karla text-paragraph;
+    line-height: 1.5;
+    max-width: 65ch;
+  }
+  .highlight{
+    @apply font-karla text-hightlight font-medium;
+  }
+  /* Button */
+  .cta-button{
+    @apply
+    text-leadText
+    text-black
+    bg-yellow
+    p-5
+    border
+    border-yellow
+    rounded-md
+  }
+}
+@layer components{
+  .home{
+    grid-template-rows: repeat(20, minmax(0, 1fr));
+
+    @apply 
+    min-w-[1440px] 
+    min-h-[2829px]
+    grid 
+    gap-0
+    /* px-[20%] */
+  }
+}
+@layer components{
+  .top-nav{
+    @apply
+    row-span-1
+
+    grid
+    grid-cols-12
+    gap-5
+    items-stretch
+  }
+  .img{
+    @apply
+    min-w-[202px]
+    min-h-[76px]
+    col-span-2
+    col-start-3
+    self-center
+  }
+  .ul{
+    @apply
+    col-span-6
+    col-start-5
+    self-center
+
+    grid
+    grid-cols-6
+    gap-5
+    justify-items-stretch
+  }
+  .page-link{
+    @apply
+    justify-self-center
+
+    text-leadText
+  }
+}
+@layer components{
+  .hero{
+    @apply
+    bg-green
+    row-span-3
+
+    grid
+    grid-cols-12
+    gap-5
+    justify-items-center
+    items-center
+
+    p-5
+  }
+  .hero-content{
+    @apply
+    col-span-4
+    col-start-3
+  }
+  .hero-content-grid{
+    @apply
+    grid
+    grid-rows-3
+    gap-0
+  }
+  .hero-img{
+    @apply
+    col-span-4
+    col-start-7
+
+    min-w-[375px]
+    min-h-[325px]
+    justify-self-stretch
+  }
+}
+@layer components{
+  .highlights{
+    @apply
+    row-span-5
+  }
+}
+@layer components{
+  .testimonials{
+    @apply
+    row-span-4
+  }
+}
+@layer components{
+  .about{
+    @apply
+    row-span-4
+  }
+}
+@layer components{
+  .bot-nav{
+    @apply
+    row-span-3
+  }
 }
