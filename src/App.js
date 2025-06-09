@@ -1,9 +1,9 @@
-import Home from './page/Home/Home.js'
+import HomePage from "./page/HomePage";
 
 export default function App(){
   return(
     <>
-      <Home />
+      <HomePage />
     </>
   )
 }

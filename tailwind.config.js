@@ -10,7 +10,8 @@ module.exports = {
       skin: '#ee9972',
       oatmilk: '#fbdabb',
       gray: '#edefee',
-      black: '#333333'
+      black: '#333333',
+      white: "#ffffff"
     },
     fontFamily: {
       markazi: ['Markazi Text', 'serif'],

@@ -47,12 +47,18 @@
     text-leadText
     text-black
     bg-yellow
-    p-5
+    p-3
     border
     border-yellow
     rounded-md
+
+    /* w-[200px] */
+    h-[60px]
+
+    align-middle
   }
 }
+/* Page styles */
 @layer components{
   .home{
     grid-template-rows: repeat(20, minmax(0, 1fr));
@@ -65,6 +71,7 @@
     /* px-[20%] */
   }
 }
+/* Page Component Styles */
 @layer components{
   .top-nav{
     @apply
@@ -75,7 +82,7 @@
     gap-5
     items-stretch
   }
-  .img{
+  .top-nav-logo{
     @apply
     min-w-[202px]
     min-h-[76px]
@@ -140,23 +147,342 @@
   .highlights{
     @apply
     row-span-5
+
+    max-h-[715px]
+
+    p-5
+  }
+  .hl-grid{
+    @apply
+    grid
+    grid-rows-8
+    grid-cols-1
+    gap-0
+  }
+  .hl-header{
+    @apply
+    row-span-2
+    row-start-1
+
+    h-max
+  }
+  .hl-header-grid{
+    @apply
+    mt-4
+
+    grid
+    grid-cols-12
+    grid-rows-2
+    h-fit
+    items-center
+  }
+  .hl-content{
+    @apply
+    row-span-7
+    row-start-3
+    self-end
+
+    h-fit
+
+    grid
+    grid-rows-1
+    grid-cols-12
+  }
+  .hl-content-grid{
+   @apply
+   col-span-8
+   col-start-3
+
+   /* shadow-xl */
+
+   /* grid
+   grid-rows-1
+   grid-cols-5
+   gap-4 */
+   flex
+   gap-4
+   justify-around
+   overflow-x-auto
+   snap-x
+   snap-mandatory
   }
 }
 @layer components{
   .testimonials{
     @apply
     row-span-4
+
+    bg-oatmilk
+
+    grid
+    grid-cols-12
+    grid-rows-3
+    gap-4
+  }
+  .tsmonl-header{
+    @apply
+    subtitle
+    col-span-2
+    col-start-6
+
+    row-span-1
+    row-start-1
+    
+    self-end
+    place-self-center
+    mb-4
+  }
+  .tsmonl-list{
+    @apply
+    col-span-8
+    col-start-3
+
+    row-span-2
+    row-start-2
+
+    grid
+    grid-cols-4
+    grid-rows-1
+    gap-2
+    place-items-center
+    items-start
   }
 }
 @layer components{
   .about{
     @apply
     row-span-4
+
+    grid
+    grid-cols-12
+    grid-rows-1
+    gap-2
+  }
+  .about-content{
+    @apply
+    col-span-4
+    col-start-3
+
+    grid
+    grid-cols-1
+    grid-rows-6
+    gap-1
+
+  }
+  .about-imgs{
+    @apply
+    col-span-4
+    col-start-7
+
+    grid
+    grid-cols-4
+    grid-rows-6
+    gap-0
+    self-center
+  }
+  .abt-img{
+    @apply
+    w-auto
+    h-[80%]
+
+    border-4
+    border-solid
+    border-white
+    rounded-md
+
+    my-10
+
+    shadow-xl
   }
 }
 @layer components{
   .bot-nav{
     @apply
     row-span-3
+
+    text-white
+    bg-black
+
+    grid
+    grid-cols-12
+    grid-rows-8
+    gap-2
+
+    justify-items-center
+    items-start
+  }
+  .bot-nav-logo{
+    @apply
+    col-span-2
+    col-start-3
+
+    row-span-7
+    row-start-1
+
+    w-auto
+    h-[280px]
+
+    mt-20
+  }
+}
+/* Atomic Styles */
+@layer components{
+  .card{
+    @apply
+    snap-start
+
+    border-gray
+    rounded-t-lg
+    w-[264px]
+    h-[439px]
+    m-4
+    shadow-xl
+
+    grid
+    grid-rows-5
+    gap-0
+  }
+  .img-container{
+    @apply
+    row-span-2
+
+    w-[265px]
+    h-[185px]
+    overflow-hidden
+  }
+  .card-img{
+    object-fit: cover;
+    object-position: center;
+    @apply
+
+    rounded-t-lg
+    max-w-[265px]
+    h-auto
+    justify-self-center
+  }
+  .card-content{
+    @apply
+    row-span-3
+
+    m-2
+
+    grid
+    grid-rows-8
+    gap-1
+  }
+  .card-header{
+    @apply
+    row-span-1
+
+    grid
+    grid-cols-4
+    grid-rows-1
+    gap-0
+    self-center
+  }
+  .button-grid{
+    @apply
+    row-span-1
+    row-start-8
+    self-center
+
+    grid
+    grid-cols-4
+    grid-rows-1
+    gap-0
+    items-end
+  }
+  .card-button{
+    @apply
+    col-span-3
+
+    w-fit
+
+    self-end
+    
+  }
+  .button-icon{
+    @apply
+    row-span-1
+
+    h-6
+    justify-self-end
+    self-end
+  }
+}
+@layer components{
+  .review-card{
+    @apply
+    w-[200px]
+    h-[175px]
+    bg-oatmilk
+    rounded-md
+    border-4
+    border-solid
+    border-green
+
+    grid
+    grid-cols-3
+    grid-rows-3
+    gap-1
+    p-2
+    pl-4
+  }
+  .review-img{
+    @apply
+    w-[47px]
+    h-[47px]
+    rounded-md
+    border-2
+    border-solid
+    border-skin
+    bg-skin
+
+    col-span-1
+    col-start-1
+    row-span-1
+    row-start-2
+
+    self-center
+  }
+}
+@layer componnets{
+  .vertical-link{
+    @apply
+    col-span-2
+
+    row-span-7
+    row-start-1
+
+    w-[220px]
+    h-auto
+    max-h-[280px]
+
+    mt-20
+  }
+  .vertical-link-header{
+    @apply
+    row-span-2
+    row-start-1
+
+    self-start
+
+    py-4
+
+    /* w-fit */
+  }
+  .vertical-link-list{
+    @apply
+    row-start-3
+
+    self-start
+  }
+  .vertical-link-item{
+    @apply
+    row-span-1
+
+    py-2
+
+    self-center
   }
 }

@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Bruschetta",
+    "price": "$7.50",
+    "description": "Our classic Bruschetta features toasted artisanal bread topped with a vibrant mix of diced tomatoes, garlic, and fresh basil. It's finished with a drizzle of extra virgin olive oil for a rich, savory flavor. Perfect as a light appetizer or to share with friends."
+  },
+  {
+    "name": "Greek Salad",
+    "price": "$9.00",
+    "description": "This refreshing salad brings together crisp cucumbers, juicy tomatoes, Kalamata olives, and creamy feta cheese. It's tossed in a homemade lemon-oregano vinaigrette that adds a bright, zesty touch. A perfect balance of flavors and textures in every bite."
+  },
+  {
+    "name": "Grilled Fish",
+    "price": "$16.00",
+    "description": "Our Grilled Fish is seasoned with herbs and char-grilled to perfection, capturing a smoky, savory flavor. Served with a side of seasonal vegetables and a lemon wedge to brighten the palate. It's a healthy and satisfying choice for seafood lovers."
+  },
+  {
+    "name": "Lemon Dessert",
+    "price": "$6.00",
+    "description": "A customer favorite, this dessert features a silky lemon custard nestled in a flaky, buttery crust. It's topped with a dollop of whipped cream and a twist of candied lemon peel. Sweet, tangy, and perfectly refreshing to end your meal."
+  },
+  {
+    "name": "Pasta",
+    "price": "$12.50",
+    "description": "Our house pasta is made with a rich tomato and basil sauce simmered to perfection. Each bite delivers comforting warmth and bold Italian flavor. Served with freshly grated Parmesan and a touch of crushed red pepper if you like a little heat."
+  }
+]
