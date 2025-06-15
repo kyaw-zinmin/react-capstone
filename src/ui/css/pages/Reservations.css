@@ -1,6 +1,19 @@
 .booking *{
   /* border: 1px solid black */
 }
+.error-table{
+  @apply
+  col-span-6
+  col-start-2
+
+  row-span-1
+  row-start-5
+
+  text-xs
+  text-tomatoRed
+  justify-self-center
+  self-end
+}
 
 .booking{
   @apply

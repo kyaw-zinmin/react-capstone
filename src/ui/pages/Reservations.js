@@ -7,8 +7,9 @@ import * as y from 'yup';
 
 export default function Reservations(){
   const [booking, setBooking] = useState(null)
-  const [success, setSuccess] = useState(false);
   const [displayDate, setDisplayDate] = useState(null)
+  const [success, setSuccess] = useState(false);
+  const [selectorValue, setSelectorValue] = useState('')
 
   useEffect(() => {
     if(booking !== null){
@@ -60,6 +61,7 @@ export default function Reservations(){
                 <h3 className="title bookingtitle-h3">Booking</h3>
               </header>
               <MyDatePicker
+                name="date"
                 selected={values.date}
                 onChange={(newDate) => {
                   setFieldValue('date', newDate);
@@ -68,9 +70,9 @@ export default function Reservations(){
                 (<div className="error">{errors.date}</div>)}
               <Selector
                 label='Table Types'
-                name="tables"
+                name="tableType"
                 id="tableTypes"
-                value={values.tableType.value}
+                value={selectorValue}
                 options={tabletypes} 
                 onChange={(e) => {
                   const value = parseInt(e.target.value);
@@ -80,11 +82,9 @@ export default function Reservations(){
 
                   console.log("Table type", selectedType);
                   setFieldValue('tableType', selectedType);
+                  setSelectorValue(value);
                 }}/>
-                {touched.label && errors.label &&
-                (<div className="error">{errors.label}</div>)}
-                {touched.value && errors.value &&
-                (<div className="error">{errors.value}</div>)}
+                {!selectorValue ? <div className="error-table">Table type is needed</div> : null}
               <div className="guestnumber">
                 <label 
                   className="lead-text guestnumber-label" htmlFor="guestnumber">Guests</label>
@@ -118,7 +118,7 @@ export default function Reservations(){
             onClick={() => {
               setBooking(null);
               setSuccess(false);
-              // setFieldValue('value', '')
+              setSelectorValue('');
             }}
             className="section-title bookingbtn"
           >

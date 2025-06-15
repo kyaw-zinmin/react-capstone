@@ -1,8 +1,8 @@
 import DatePicker from "react-datepicker";
 
-export default function MyDatePicker({selected, onChange}){
+export default function MyDatePicker({selected, onChange, ...props}){
   return(
-    <div className="datepicker">
+    <div className="datepicker" name={props.name}>
       <label
       className="lead-text datepicker-label"
       htmlFor="datepicker">Date</label>
