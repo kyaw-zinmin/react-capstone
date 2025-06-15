@@ -63,12 +63,19 @@
   font-medium
   text-[1.3vw]
 }
+.error{
+  @apply
+  col-span-6
+  
+}
 @import './ui/css/App.css';
 
 @import './ui/css/atomics/VerticalLinks.css';
 @import './ui/css/atomics/BackgroundGrid.css';
 @import './ui/css/atomics/Card.css';
 @import './ui/css/atomics/ReviewCard.css';
+@import './ui/css/atomics/MyDatePicker.css';
+@import './ui/css/atomics/Selector.css';
 
 @import './ui/css/composites/TopNav.css';
 @import './ui/css/composites/Main.css';
@@ -83,3 +90,5 @@
 @import './ui/css/pages/Login.css';
 @import './ui/css/pages/OrderOnline.css';
 @import './ui/css/pages/Reservations.css';
+
+@import 'react-datepicker/dist/react-datepicker.css';

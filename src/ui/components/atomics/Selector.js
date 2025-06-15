@@ -6,15 +6,21 @@ export default function Selector({
   const [field, meta] = useField(props);
   return(
     <div className="selector">
-      <label htmlFor={props.id || props.name}>
+      <label 
+      className="lead-text selector-label"
+      htmlFor={props.id}>
         {label}
       </label>
-      <select {...field} {...props}>
-        <option value="">Table type</option>
+      <select
+      className="selector-picker" 
+      name={props.name}
+      id={props.id} 
+      {...field} 
+      {...props}>
+        <option value="">--Table type--</option>
         {options.map((option, index) => {
           return(
             <option 
-            name={label}
             key={index}
             value={option.value}>
               {option.label}

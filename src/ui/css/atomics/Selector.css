@@ -1,0 +1,37 @@
+.selector{
+  @apply
+  col-span-6
+  col-start-2
+
+  row-span-1
+  row-start-5
+
+  grid
+  grid-cols-6
+  grid-rows-1
+  gap-0
+}
+.selector-label{
+  @apply
+  col-span-2
+  col-start-1
+
+  self-start
+  py-2
+}
+.selector-picker{
+  @apply
+  col-span-4
+  col-start-3
+
+  self-start
+  w-[98%]
+  h-fit
+  mx-auto
+  p-1
+
+  border
+  border-softChalk
+  rounded-md
+  bg-trueWhite
+}

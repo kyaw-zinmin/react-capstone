@@ -1,0 +1,35 @@
+.datepicker{
+  @apply
+  col-span-6
+  col-start-2
+
+  row-span-1
+  row-start-4
+
+  grid
+  grid-cols-6
+  grid-rows-1
+  gap-0
+}
+.datepicker-label{
+  @apply
+  col-span-2
+  col-start-1
+
+  self-start
+  py-2
+}
+.datepicker-picker{
+  @apply
+  col-span-4
+  col-start-3
+
+  w-fit
+  h-fit
+  mx-auto
+  p-1
+
+  border
+  border-softChalk
+  rounded-md
+}

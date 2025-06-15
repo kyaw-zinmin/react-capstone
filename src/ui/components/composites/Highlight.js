@@ -15,8 +15,8 @@ export default function Highlight(){
           </div>
         </header>
         <div className="hlcards">
-          {menu.map((item) => {
-            return <Card menu={item} />
+          {menu.map((item, index) => {
+            return <Card key={index} menu={item} />
           })}
         </div>
       </div>

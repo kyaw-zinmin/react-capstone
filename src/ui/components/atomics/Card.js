@@ -1,6 +1,6 @@
-export default function Card({menu}){
+export default function Card({key, menu}){
   return(
-    <section className="card">
+    <section key={key} className="card">
       <div className="cardimg">
         <img 
         className="cardimg-img"
