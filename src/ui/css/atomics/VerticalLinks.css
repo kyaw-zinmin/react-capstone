@@ -1,0 +1,18 @@
+.vertlinks{
+  @apply
+  flex-auto
+
+  flex
+  flex-col
+  gap-2
+
+  px-[1vw]
+}
+.vertlinks-header{
+}
+.vertlinks-ul{
+  @apply
+  flex
+  flex-col
+
+}

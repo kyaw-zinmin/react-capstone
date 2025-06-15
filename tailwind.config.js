@@ -1,35 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './src/**/*.{jsx,js,tsx,ts}',
-  ],
+  content: [],
   theme: {
     colors: {
-      green: '#495e57',
-      yellow: '#f4ce14',
-      skin: '#ee9972',
-      oatmilk: '#fbdabb',
-      gray: '#edefee',
-      black: '#333333',
-      white: "#ffffff"
+      oliveGreen: "#495E57",     // Formerly "green"
+      saffronYellow: "#F4CE14",  // Formerly "yello"
+
+      tomatoRed: "#ee9972",      // Formerly "tomato"
+      peachBeige: "#fbdabb",     // Formerly "skin"
+      softChalk: "#edefee",      // Formerly "chalk"
+      graphiteBlack: "#333333",  // Formerly "black"
+
+      trueWhite: "#ffffff",
+      trueBlack: "#000000",
     },
     fontFamily: {
-      markazi: ['Markazi Text', 'serif'],
+      markaziText: ['Markazi Text', 'serif'],
       karla: ['Karla', 'sans-serif']
-    },
-    fontSize: {
-      // Markazi Text 
-      displayTitle: '85px',
-      subbTitle: '52px',
-      // Karla
-      leadText: '24px',
-      sectionTitle: '27px',
-      sectionCategory: '21px',
-      cardTitle: '24px',
-      paragraph: '21px', // line height 1.5
-      hightlight: '21px'
-    },
-    extend: {},
+    }
   },
   plugins: [],
 }

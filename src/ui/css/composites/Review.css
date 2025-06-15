@@ -1,0 +1,44 @@
+.review *{
+  /* border: 1px solid black; */
+}
+
+.review{
+  @apply
+  bg-oliveGreen
+  h-fit
+
+  grid
+  grid-cols-12
+  grid-rows-5
+  gap-3
+
+  px-8
+}
+.reviewtitle{
+  @apply
+  col-span-8
+  col-start-3
+
+  row-span-1
+  row-start-2
+
+  text-softChalk
+  text-center
+  self-center
+  p-3
+}
+.reviewcards{
+  @apply
+  col-span-8
+  col-start-3
+
+  row-span-2
+  row-start-3
+
+  py-3
+
+  flex
+  flex-row
+  gap-6
+  overflow-x-auto
+}

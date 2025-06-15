@@ -1,0 +1,97 @@
+.card{
+  @apply
+  rounded-t-xl
+  bg-trueWhite
+  shadow-xl
+
+  min-w-[20vw]
+  max-h-[30vw]
+
+  flex
+  flex-col
+}
+.cardimg{
+  @apply
+  flex-auto
+  
+  w-auto
+  min-h-[40%]
+  max-h-[40%]
+  overflow-clip
+
+  inline-grid
+  grid-cols-1
+  grid-rows-1
+  gap-0
+
+  self-center
+}
+.cardimg-img{
+  @apply
+  rounded-t-xl
+  object-cover
+
+  border
+  border-softChalk
+
+  justify-self-stretch
+  self-stretch
+}
+.cardtext{
+  @apply
+  flex
+  flex-col
+
+  h-[20vw]
+}
+.cardtext-head{
+  @apply
+  flex-auto
+  w-full
+  h-fit
+
+  grid
+  grid-cols-3
+  grid-rows-1
+  gap-0
+
+  pt-2
+}
+.cardtext-h3{
+  @apply
+  col-span-2
+  col-start-1
+
+  justify-self-start
+  self-center
+
+  pl-2
+}
+.cardtext-price{
+  @apply
+  text-tomatoRed
+
+  justify-self-end
+  self-center
+
+  pr-2
+
+}
+.cardtext-p{
+  @apply
+  flex-auto
+  w-full
+  h-[80%]
+
+  p-2
+
+}
+.cardbtn{
+  @apply
+
+  w-full
+  h-fit
+
+  text-left
+  p-2
+}

@@ -1,0 +1,98 @@
+.aboutcomp *{
+  /* border: 1px solid black; */
+}
+
+.aboutcomp{
+  @apply
+  bg-trueWhite
+  grid
+  grid-cols-12
+  grid-rows-6
+  gap-3
+
+  px-8
+}
+.abtcmptext{
+  @apply
+  col-span-4
+  col-start-3
+
+  row-span-4
+  row-start-2
+
+  grid
+  grid-cols-4
+  grid-rows-5
+  gap-0
+}
+.abtcmptext-header{
+  @apply
+  col-span-4
+  col-start-1
+
+  row-span-1
+  row-start-2
+}
+.abtcmptext-h1{
+  @apply
+  text-oliveGreen
+}
+.abtcmptext-h2{
+  @apply
+  text-saffronYellow
+}
+.abtcmptext-p{
+  @apply
+  col-span-4
+  col-start-1
+
+  row-span-2
+  row-start-3
+
+  py-3
+}
+.abtcmpimg{
+  @apply
+  col-span-4
+  col-start-7
+
+  row-span-4
+  row-start-2
+
+  grid
+  grid-cols-5
+  grid-rows-5
+  gap-0
+}
+.abtcmpimg-img{
+  @apply
+  col-span-3
+  row-span-3
+
+  min-w-[20vw]
+  max-w-[20vw]
+  min-h-[25vw]
+  max-h-[25vw]
+
+  object-cover
+  rounded-md
+  border-2
+  border-softChalk
+  shadow-xl
+}
+.imgover{
+  @apply
+  z-20
+  col-start-1
+  row-start-3
+
+  place-self-start
+}
+.imgunder{
+  @apply
+  z-10
+  col-start-3
+  row-start-1
+
+  place-self-end
+}

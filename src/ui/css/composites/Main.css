@@ -1,0 +1,7 @@
+.main{
+  @apply
+  z-10
+  grow
+  shrink-0
+  basis-auto
+}

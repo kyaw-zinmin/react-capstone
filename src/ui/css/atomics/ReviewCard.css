@@ -1,0 +1,79 @@
+.reviewcard{
+  @apply
+  bg-softChalk
+  flex-auto
+
+  min-w-[20vw]
+  min-h-[20vw]
+  max-h-[20vw]
+
+  rounded-md
+  shadow-lg
+
+  grid
+  grid-cols-6
+  grid-rows-6
+  gap-0
+}
+.reviewrating{
+  @apply
+  col-span-1
+  col-start-1
+
+  row-span-1
+  row-start-1
+
+  w-full
+  h-fit
+  text-center
+  self-center
+}
+.reviewname{
+  @apply
+  col-span-5
+  col-start-2
+
+  row-span-1
+  row-start-1
+
+  w-full
+  h-fit
+  text-left
+  self-center
+
+  pl-3
+}
+.reviewimg{
+  @apply
+  col-span-6
+  col-start-1
+
+  row-span-3
+  row-start-2
+
+  h-full
+  border
+  border-softChalk
+  border-x-4
+  overflow-clip
+}
+.reviewimg-img{
+  @apply
+  w-full
+  h-full
+  object-cover
+
+  justify-self-stretch
+  self-stretch
+}
+.reviewcomment{
+  @apply
+  col-span-6
+  col-start-1
+
+  row-span-2
+  row-start-5
+
+  p-2
+  overflow-hidden
+}

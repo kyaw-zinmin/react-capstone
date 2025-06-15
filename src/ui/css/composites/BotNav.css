@@ -1,0 +1,59 @@
+.botnav *{
+  /* border: 1px solid black; */
+}
+.botnav{
+  @apply
+  text-softChalk
+  bg-trueBlack
+  z-10
+  shrink-0
+
+  flex
+  flex-col
+
+  border-t-2
+  py-4
+}
+.botnav-grid{
+  @apply
+  grid
+  grid-cols-12
+  grid-rows-1
+  gap-3
+
+  px-8
+}
+.botnav-copy{
+  @apply
+  text-center
+  py-1
+}
+.botnav-ul{
+  @apply
+  col-span-8
+  col-start-3
+  
+  grid
+  grid-cols-8
+  grid-rows-1
+  gap-3
+
+  py-2
+  
+  self-center
+}
+.botnav-logolink{
+  @apply
+  col-span-2
+
+  max-w-[10vw]
+  justify-self-center
+}
+.botnav-vertlinksflex{
+  @apply
+  col-span-6
+  col-start-3
+
+  flex
+  gap-3
+}
